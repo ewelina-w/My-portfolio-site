@@ -1,0 +1,185 @@
+header, main, footer {
+  font-family: 'Josefin Sans', 'Alegreya Sans', sans-serif;
+  color: #2d3c49;
+}
+
+
+.top img {
+  width: 80px;
+}
+
+.intro h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 0em;
+}
+
+.intro p {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2em;
+  text-align: right;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+hr {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px #7d97ad;
+}
+
+.mobile {
+  display: none;
+}
+
+.photo {
+    width: 100%;
+}
+
+h2 {
+  color: #7d97ad;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio img {
+  height: 175px;
+}
+
+.portfolio p {
+  color: #2d3c49;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  line-height: 0.5em;
+}
+
+.anchor {
+  display: block;
+  width: 70px;
+  margin: 0 auto;
+  color: #2d3c49;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: 5em;
+  font-size: 11px;
+  color: #2d3c49;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 499px) {
+  .top img {
+    width: 50px;
+  }
+
+  .intro h1 {
+    font-size: 20px;
+    line-height: normal;
+    text-align: right;
+  }
+
+  .intro p {
+    font-size: 16px;
+    line-height: 0.8em;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .portfolio {
+    flex-wrap: wrap;
+  }
+
+  .portfolio img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .portfolio p {
+    font-size: 20px;
+    line-height: 0;
+  }
+
+  .anchor {
+    padding-bottom: 1.6em;
+  }
+
+  footer {
+    flex-direction: column;
+    margin-top: 1em;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 1000px) {
+  .intro h1 {
+    font-size: 25px;
+    line-height: 0;
+    text-align: right;
+  }
+
+  .portfolio {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .blog {
+    order: 4;
+  }
+
+  .lion {
+    order: 2;
+  }
+
+  .portfolio img {
+    height: 175px;
+  }
+
+  .anchor {
+    padding-bottom: 1.6em;
+  }
+
+  footer {
+    flex-direction: column;
+    margin-top: 1em;
+    line-height: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}
